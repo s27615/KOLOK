@@ -10,8 +10,7 @@ builder.Services.AddSwaggerGen();
 // Add controllers functionality
 builder.Services.AddControllers();
 // Dependency injection for AnimalsRepository
-builder.Services.AddScoped<IAnimalsRepository, AnimalsRepository>();
-builder.Services.AddScoped<IWarehouseRepository, WarehouseRepository>();
+builder.Services.AddScoped<IBooksRepository, BooksRepository>();
 
 var app = builder.Build();
 
